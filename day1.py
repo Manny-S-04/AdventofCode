@@ -30,4 +30,22 @@ In case the Elves get hungry and need extra snacks, they need to know which Elf 
 Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?
 """
 
+with open("day1.txt", "r") as file:
+    aocinput = [line for line in file]
+
+
+sums = []
+current_sum = 0
+
+for item in aocinput:
+    if item == '\n':
+        sums.append(current_sum)
+        current_sum = 0
+    else:
+        current_sum += int(item)
+
+if current_sum != 0:
+    sums.append(current_sum)
+
+print(max(sums))
 
