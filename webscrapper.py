@@ -54,7 +54,7 @@ def savetotext(aocinput):
     
     inputToArray = np.array(aocinput, dtype="U")
     
-    np.savetxt("day1.csv", inputToArray, fmt="%s", delimiter='\n\n')
+    np.savetxt("day1.txt", inputToArray, fmt="%s", delimiter='\n\n')
     
     
     
