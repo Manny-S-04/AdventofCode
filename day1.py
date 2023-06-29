@@ -46,6 +46,12 @@ for item in aocinput:
 
 if current_sum != 0:
     sums.append(current_sum)
-
+    
+# part 1
 print(max(sums))
+
+sortedList = sorted(sums,reverse=True)
+# part 2
+print(sum(sortedList[0:3]))
+
 
